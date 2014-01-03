@@ -1,10 +1,17 @@
 doctype 5
 html
   head
-    title my_site_drone
+    title JAMES ROY POULTER
+    meta name="James Roy Poulter" content="author"
     = stylesheet_link_tag    'application', media: 'all'
     = javascript_include_tag 'application'
     = csrf_meta_tags
+    link href="http://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700" rel="stylesheet" type="text/css"
+    link href="pages.css" media="all" rel="stylesheet" type="text/css"
+    script src="http://code.jquery.com/jquery-1.10.1.min.js"
+    script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    script src="cycle.js"
+    script src="jquery.fitvids.js"
 
   body class=controller_name
     = yield

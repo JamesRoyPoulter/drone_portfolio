@@ -3,4 +3,5 @@
 //= require init
 //= require underscore
 //= require jquery_nested_form
+//= require pages
 

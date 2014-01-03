@@ -21,7 +21,15 @@ group :assets do
 end
 
 group :development do
+  gem 'pry-rails'
+  gem 'pry-debugger'
+  gem 'better_errors'
+  gem 'binding_of_caller'
+  gem 'pry-stack_explorer'
+  gem 'guard'
   gem 'guard-livereload', require: false
+  gem "rack-livereload"
+  gem 'rb-fsevent'
 end
 
 gem 'jquery-rails'
@@ -46,7 +54,11 @@ gem "therubyracer"
 gem "compass-rails"
 gem "will_paginate"
 gem "bootstrap-will_paginate"
+
 gem "newrelic_rpm"
+gem 'settingslogic'
+gem 'rails_12factor'
+
 gem "rspec-rails", :group => ["development", "test"]
 gem "factory_girl_rails", :group => ["development", "test"]
 gem "bootstrap-sass", :group => :assets
@@ -54,3 +66,4 @@ gem "underscore-rails"
 gem "nested_form", :git => "git://github.com/ryanb/nested_form.git"
 gem "simple_form"
 gem "country_select"
+

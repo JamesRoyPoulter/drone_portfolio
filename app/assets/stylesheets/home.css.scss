@@ -11,16 +11,17 @@ body {
 }
 
 #container {
-  padding: 0 40px;
-  width: 960px;
+  padding: 0 2%;
+  width: 100%;
+  max-width: 1500px;
   margin: auto;
-  @media only screen and (max-width : 959px) {
-    width: 100px;
-  }
+  // @media only screen and (max-width : 700px) {
+  //   width: 100px;
+  // }
 }
 
 #header {
-  margin: 50px 0;
+  margin: 50px 0 40px 0;
 }
 
 h1 {
@@ -28,9 +29,48 @@ h1 {
 }
 
 #content_container {
-  width: 80%;
+  width: 90%;
+  display: inline-block;
+  vertical-align: top;
   margin: auto 0;
-  float: left;
+}
+
+/***********START DIV***********/
+
+#start_about_images, #start_portfolio_images, #start_video_images {
+  display: inline-block;
+}
+
+#start_portfolio_images, #start_video_images {
+  margin-right: 2%;
+}
+
+#start_portfolio_images {
+  width: 39%;
+}
+
+#start_video_images {
+  width: 35.7%;
+}
+
+#start_about_images {
+  width: 20.5%;
+}
+
+.logo {
+  width: 100%;
+  vertical-align: top;
+}
+
+.words {
+  text-align: center;
+  width: 100%;
+  margin-top: 25%;
+  font-size: 2em;
+}
+
+.words2 {
+  margin-top: 43%;
 }
 
 /***********TECH FUN***********/
@@ -75,10 +115,9 @@ h1 {
 
 /***********SIDEBAR FUN***********/
 #sidebar {
-  width: 20%;
+  width: 10%;
   margin: auto 0;
   display:  inline-block;
-  float: right;
 }
 
 #about_div, #portfolio_div, #video_div, #contact_div {
@@ -87,11 +126,16 @@ h1 {
 
 ul {
     list-style-type: none;
+    padding-left: 20px;
 }
 
 li:hover {
   color: #68228B;
   letter-spacing: 2px;
+}
+
+#navbar {
+  margin-top: 5px;
 }
 
 #navbar ul {
@@ -102,6 +146,13 @@ li:hover {
 .divider {
   position: relative;
   height: 35px;
+  width: 35px;
+}
+
+@media only screen and (max-width : 1400px) {
+  .divider:first-child, .divider:nth-child(2) {
+      display: inline-block;
+  }
 }
 
 #height {
@@ -119,7 +170,76 @@ li:hover {
 
 // media queries
 
+@media only screen and (max-width : 940px) and (min-width : 641px) {
 
+  #social {
+    position: absolute;
+    top: 370px;
+    left: 35%;
+  }
+}
+
+@media only screen and (max-width : 940px) {
+
+  #block {
+    display: inline-block;
+  }
+
+  .divider {
+    margin-right: 20px;
+  }
+
+  @media only screen and (max-width : 641px) {
+    #content_container {
+      width: 500px;
+      margin: auto;
+      height: 150px;
+      display: block;
+    }
+
+    #sidebar {
+      width: 500px;
+      margin: auto;
+      display: block;
+    }
+    #sidebar .links li {
+      display: inline-block;
+      width: 25%;
+      text-align: center;
+    }
+
+    #navbar {
+      margin-top: 40px;
+    }
+
+    .links {
+      padding-left: 0;
+    }
+
+    #social {
+      position: relative;
+      left: none;
+      bottom: none;
+      width: 490px;
+      margin-left: -25px;
+    }
+
+    .divider {
+      margin-right: 0;
+      width: 25%;
+      text-align: center;
+    }
+
+    #block {
+      width: 50%;
+      .divider {
+        width: 50%;
+      }
+    }
+
+  }
+
+}
 
 
 

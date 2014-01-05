@@ -9,28 +9,28 @@ $('#header_logo').click () ->
   $('#video_div').hide()
   $('#contact_div').hide()
 
-$('#about_link').click () ->
+$('.about_link').click () ->
   $('#about_div').show()
   $('#start_div').hide()
   $('#portfolio_div').hide()
   $('#video_div').hide()
   $('#contact_div').hide()
 
-$('#portfolio_link').click () ->
+$('.portfolio_link').click () ->
   $('#portfolio_div').show()
   $('#start_div').hide()
   $('#about_div').hide()
   $('#video_div').hide()
   $('#contact_div').hide()
 
-$('#video_link').click () ->
+$('.video_link').click () ->
   $('#video_div').show()
   $('#start_div').hide()
   $('#about_div').hide()
   $('#portfolio_div').hide()
   $('#contact_div').hide()
 
-$('#contact_link').click () ->
+$('.contact_link').click () ->
   $('#contact_div').show()
   $('#start_div').hide()
   $('#about_div').hide()
@@ -57,6 +57,8 @@ $('#github').mouseenter () ->
 $('#github').mouseleave () ->
   $('#github_purple').hide()
 
-$('#start_div').cycle()
+$('#start_about_images').cycle()
+$('#start_portfolio_images').cycle()
+$('#start_video_images').cycle()
 
 $('#container').fitVids()

@@ -1,62 +1,82 @@
-| hello
 #container
   h1
     img src="assets/logo.png" alt="James Roy Poulter" id="header_logo"
   #content_container
     #start_div
       #start_about_images
-        img src="assets/s/unlibri.jpg"
-        img src="assets/unlibri.jpg" alt="James Roy Poulter" id="logo"
-        img src="assets/unlibri.jpg" alt="James Roy Poulter" id="logo"
-        img src="assets/unlibri.jpg" alt="James Roy Poulter" id="logo"
+        img src="assets/s/unlibri.jpg" alt="James Roy Poulter" id="logo"
+        img src="assets/s/unlibri.jpg" alt="James Roy Poulter" id="logo"
+        img src="assets/s/unlibri.jpg" alt="James Roy Poulter" id="logo"
+        img src="assets/s/unlibri.jpg" alt="James Roy Poulter" id="logo"
       #start_portfolio_images
-        img src="assets/unlibri.jpg" alt="James Roy Poulter" id="logo"
-        img src="assets/unlibri.jpg" alt="James Roy Poulter" id="logo"
+        img src="assets/s/unlibri.jpg" alt="James Roy Poulter" id="logo"
+        img src="assets/s/unlibri.jpg" alt="James Roy Poulter" id="logo"
       #start_video_images
-        img src="assets/unlibri.jpg" alt="James Roy Poulter" id="logo"
-        img src="assets/unlibri.jpg" alt="James Roy Poulter" id="logo"
-        img src="assets/unlibri.jpg" alt="James Roy Poulter" id="logo"
-        img src="assets/unlibri.jpg" alt="James Roy Poulter" id="logo"
-    #about_div about
-  /   #portfolio_div portfolio
-  /   #video_div
-  /     .videos
-  /       .video_video
-  /         iframe{:allowfullscreen => "", :frameborder => "0", :height => "281", :mozallowfullscreen => "", :src => "http://player.vimeo.com/video/70320776", :webkitallowfullscreen => "", :width => "500"}
-  /       .video_words
-  /         .title weekend change
-  /         p.description startup weekend
-  /         p.date date
-  /     .videos
-  /       .video_video
-  /         iframe{:allowfullscreen => "", :frameborder => "0", :height => "281", :mozallowfullscreen => "", :src => "http://player.vimeo.com/video/42997428", :webkitallowfullscreen => "", :width => "500"}
-  /       .video_words
-  /         .title weekend change
-  /         p.description startup weekend
-  /         p.date date
-  /   #contact_div contact
-  / #sidebar
-  /   #navbar
-  /     ul#links
-  /       li#about_link about
-  /       li#portfolio_link portfolio
-  /       li#video_link video
-  /       li#contact_link contact
-  /   #social
-  /     ul#links
-  /       .divider#height
-  /         li
-  /           a{:href => "http://facebook.com"} <img src="i/c/Facebook.png", id="facebook">
-  /           a{:href => "http://facebook.com"} <img src="i/c/Facebook_purple.png", id="facebook_purple">
-  /       .divider
-  /         li
-  /           a{:href => "http://twitter.com"} <img src="i/c/Twitter.png", id="twitter">
-  /           a{:href => "http://twitter.com"} <img src="i/c/Twitter_purple.png", id="twitter_purple">
-  /       .divider
-  /         li
-  /           a{:href => "http://facebook.com"} <img src="i/c/LinkedIn.png", id="linkedin">
-  /           a{:href => "http://facebook.com"} <img src="i/c/LinkedIn_purple.png", id="linkedin_purple">
-  /       .divider
-  /         li
-  /           a{:href => "http://github.com"} <img src="i/c/Github.png", id="github">
-  /           a{:href => "http://github.com"} <img src="i/c/Github_purple.png", id="github_purple">
+        img src="assets/s/unlibri.jpg" alt="James Roy Poulter" id="logo"
+        img src="assets/s/unlibri.jpg" alt="James Roy Poulter" id="logo"
+        img src="assets/s/unlibri.jpg" alt="James Roy Poulter" id="logo"
+        img src="assets/s/unlibri.jpg" alt="James Roy Poulter" id="logo"
+    #about_div
+      | about
+      br
+      | I'm James. I just want to do things. Interesting things. Hopefully things that matter.
+    #portfolio_div portfolio
+    #video_div
+      .videos
+        .video_video
+          iframe allowfullscreen="" frameborder="0" height="281" mozallowfullscreen="" src="http://player.vimeo.com/video/70320776" webkitallowfullscreen="" width ="500"
+        .video_words
+          .title weekend change
+          p.description startup weekend
+          p.date date
+      .videos
+        .video_video
+          iframe allowfullscreen="" frameborder="0" height="281" mozallowfullscreen="" src="http://player.vimeo.com/video/42997428" webkitallowfullscreen="" width ="500"
+        .video_words
+          .title weekend change
+          p.description startup weekend
+          p.date date
+    #contact_div
+      | contact
+      br
+      | @jamesroypoulter
+      br
+      |  me@jamesroypoulter.com
+      br
+      |  jamesroypoulter.com
+      |  github
+      |  linkedin
+  #sidebar
+    #navbar
+      ul#links
+        li#about_link about
+        li#portfolio_link portfolio
+        li#video_link video
+        li#contact_link contact
+
+    #social
+      ul#links
+        #height.divider
+          li
+            a href="http://facebook.com"
+              | <img src="assets/c/Facebook.png", id="facebook">
+            a href="http://facebook.com"
+              | <img src="assets/c/Facebook_purple.png", id="facebook_purple">
+        .divider
+          li
+            a href="http://twitter.com"
+              | <img src="assets/c/Twitter.png", id="twitter">
+            a href="http://twitter.com"
+              | <img src="assets/c/Twitter_purple.png", id="twitter_purple">
+        .divider
+          li
+            a href="http://facebook.com"
+              | <img src="assets/c/LinkedIn.png", id="linkedin">
+            a href="http://linkedin.com"
+              | <img src="assets/c/LinkedIn_purple.png", id="linkedin_purple">
+        .divider
+          li
+            a href="http://github.com"
+              | <img src="assets/c/Github.png", id="github">
+            a href="http://github.com"
+              | <img src="assets/c/Github_purple.png", id="github_purple">

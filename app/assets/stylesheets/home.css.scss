@@ -1,0 +1,93 @@
+// Place all the styles related to the Pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .8px;
+}
+
+#container {
+  width: 960px;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+#content_container {
+  width: 80%;
+  margin: auto 0;
+  float: left;
+}
+
+
+/***********VIDEO FUN***********/
+
+.videos {
+  margin-bottom: 20px;
+}
+
+.video_video {
+  width: 50%;
+  /*float: left;*/
+}
+
+.video_words {
+  width: 46%;
+  padding: 0 2%;
+  float: right;
+  margin-top: .5em;
+}
+
+/***********SIDEBAR FUN***********/
+#sidebar {
+  width: 20%;
+  margin: auto 0;
+  display:  inline-block;
+  float: right;
+}
+
+#about_div, #portfolio_div, #video_div, #contact_div {
+  display: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li:hover {
+  color: #68228B;
+  letter-spacing: 2px;
+}
+
+#navbar ul {
+  line-height: 2;
+  margin-top: 0;
+}
+
+.divider {
+  position: relative;
+  height: 35px;
+}
+
+#height {
+  height: 34px;
+}
+
+#facebook, #twitter, #linkedin, #github {
+  position: absolute;
+}
+
+#facebook_purple, #twitter_purple, #linkedin_purple, #github_purple {
+  display: none;
+  position: absolute;
+}
+
+/*#facebook_purple:hover, #twitter_purple:hover, #linkedin_purple:hover, #github_purple:hover {
+  display: block;
+}*/

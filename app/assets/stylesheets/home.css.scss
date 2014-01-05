@@ -11,8 +11,16 @@ body {
 }
 
 #container {
+  padding: 0 40px;
   width: 960px;
   margin: auto;
+  @media only screen and (max-width : 959px) {
+    width: 100px;
+  }
+}
+
+#header {
+  margin: 50px 0;
 }
 
 h1 {
@@ -25,23 +33,44 @@ h1 {
   float: left;
 }
 
+/***********TECH FUN***********/
+
+.tech_image {
+  width: 100%;
+}
+
 
 /***********VIDEO FUN***********/
 
-.videos {
+.videos, .techs {
   margin-bottom: 20px;
 }
 
-.video_video {
+.video_video, .tech_picture {
   width: 50%;
-  /*float: left;*/
+  display: inline-block;
 }
 
-.video_words {
+.video_words, .tech_words {
   width: 46%;
-  padding: 0 2%;
-  float: right;
+  padding-left: 2%;
+  display: inline-block;
   margin-top: .5em;
+  vertical-align: top;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+.description {
+  text-transform: none;
+  font-size: 1em;
+}
+
+.date {
+  font-weight: 700;
 }
 
 /***********SIDEBAR FUN***********/
@@ -88,6 +117,9 @@ li:hover {
   position: absolute;
 }
 
-/*#facebook_purple:hover, #twitter_purple:hover, #linkedin_purple:hover, #github_purple:hover {
-  display: block;
-}*/
+// media queries
+
+
+
+
+

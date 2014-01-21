@@ -8,7 +8,7 @@ body {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: .8px;
-  font-size: 1.6em;
+  font-size: 1.4em;
 }
 
 #container {
@@ -108,6 +108,8 @@ h1 {
 .description {
   text-transform: none;
   font-size: 1em;
+  font-weight: 400;
+  font-family: helvetica, sans-serif;
 }
 
 .date {
@@ -119,6 +121,9 @@ h1 {
 
 #about_div {
   text-transform: none;
+  font-weight: 400;
+  font-family: helvetica, sans-serif;
+  padding: 0 10%;
 }
 
 

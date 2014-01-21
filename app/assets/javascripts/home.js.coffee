@@ -2,6 +2,7 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://jashkenas.github.com/coffee-script/
 
+#  navigation
 $('#header_logo').click () ->
   $('#start_div').show()
   $('#about_div').hide()
@@ -37,6 +38,7 @@ $('.contact_link').click () ->
   $('#portfolio_div').hide()
   $('#video_div').hide()
 
+# side bar
 $('#facebook').mouseenter () ->
   $('#facebook_purple').show()
 $('#facebook').mouseleave () ->
@@ -57,8 +59,22 @@ $('#github').mouseenter () ->
 $('#github').mouseleave () ->
   $('#github_purple').hide()
 
-$('#start_about_images').cycle()
-$('#start_portfolio_images').cycle()
-$('#start_video_images').cycle()
+# cycles
+$('#start_about_images').cycle
+  delay: 2500
 
+$('#start_portfolio_images').cycle()
+
+$('#start_video_images').cycle
+  delay: 1250
+
+# video adjustments
 $('#container').fitVids()
+
+#  about page
+$('#school').click () ->
+  $('#reveal_school').toggle()
+$('#corporate').click () ->
+  $('#reveal_corporate').toggle()
+$('#start-up').click () ->
+  $('#reveal_start-up').toggle()

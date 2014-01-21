@@ -9,6 +9,7 @@ $('#header_logo').click () ->
   $('#portfolio_div').hide()
   $('#video_div').hide()
   $('#contact_div').hide()
+  $('#sidebar').show() if $(document).width() < 761
 
 $('.about_link').click () ->
   $('#about_div').show()
@@ -16,6 +17,7 @@ $('.about_link').click () ->
   $('#portfolio_div').hide()
   $('#video_div').hide()
   $('#contact_div').hide()
+  $('#sidebar').hide() if $(document).width() < 761
 
 $('.portfolio_link').click () ->
   $('#portfolio_div').show()
@@ -23,6 +25,7 @@ $('.portfolio_link').click () ->
   $('#about_div').hide()
   $('#video_div').hide()
   $('#contact_div').hide()
+  $('#sidebar').hide() if $(document).width() < 761
 
 $('.video_link').click () ->
   $('#video_div').show()
@@ -30,6 +33,7 @@ $('.video_link').click () ->
   $('#about_div').hide()
   $('#portfolio_div').hide()
   $('#contact_div').hide()
+  $('#sidebar').hide() if $(document).width() < 761
 
 $('.contact_link').click () ->
   $('#contact_div').show()
@@ -37,6 +41,7 @@ $('.contact_link').click () ->
   $('#about_div').hide()
   $('#portfolio_div').hide()
   $('#video_div').hide()
+  $('#sidebar').hide() if $(document).width() < 761
 
 # side bar
 $('#facebook').mouseenter () ->

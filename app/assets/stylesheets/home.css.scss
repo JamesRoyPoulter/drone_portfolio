@@ -8,6 +8,7 @@ body {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: .8px;
+  font-size: 1.6em;
 }
 
 #container {
@@ -198,7 +199,7 @@ li:hover {
     margin-right: 20px;
   }
 
-  @media only screen and (max-width : 641px) {
+  @media only screen and (max-width : 761px) {
     #content_container {
       width: 500px;
       margin: auto;
@@ -210,6 +211,8 @@ li:hover {
       width: 500px;
       margin: auto;
       display: block;
+      background-color: white;
+      padding-bottom: 40px;
     }
     #sidebar .links li {
       display: inline-block;
@@ -226,7 +229,6 @@ li:hover {
     }
 
     #social {
-      position: relative;
       left: none;
       bottom: none;
       width: 490px;
